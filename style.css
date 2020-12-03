@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-bar {
+    font-size: 1rem;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+    'left-nav right-nav'
+    ;
+    height: 50px;
+}
+
+.left-nav li,
+.right-nav li{
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.left-nav {
+    grid-area: 'left-nav';
+    margin-left: 50px;
+}
+
+.right-nav {
+    grid-area: 'right-nav';
+    margin: 0 50px 0 auto;
+
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 7px;
+    vertical-align: middle;
+}
+
+.social-icon:last-child {
+    font-size: 2rem;
+}
+
+.google #google-logo{
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+}
+
+.form {
+    text-align: center;
+}
+
+#form-search {
+    width: 525px;
+    line-height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+}
+
+.btns {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 300px;
+}
+
+.btns input {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.062);
+    border: 0;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #f2f2f2;
+    font-size: .9rem;;
+    border-top: solid 2px #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'left-footer footer-message right-footer'
+    ;
+}
+
+.left-footer {
+    grid-area: 'left-footer';
+    margin-left: 50px;
+}
+
+.footer-message {
+    text-align: center;
+}
+
+.right-footer {
+    grid-area: 'right-footer';
+    margin: 0 50px 0 auto;
+
+}
+
+.left-footer li,
+.footer-message,
+.right-footer li{
+    display: inline-block;
+    color: rgb(121, 121, 121);
+    padding: 5px;
+    margin: 8px;
+}
